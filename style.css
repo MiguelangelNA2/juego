@@ -1,0 +1,181 @@
+        .pantalla-prox {
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 30;
+        }
+        .mensaje-prox {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 18px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .btn-siguiente {
+            font-size: 18px;
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 28px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #0004;
+            margin-top: 10px;
+        }
+ body {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .marco {
+            background: #111;
+            border: 2.5px solid #fff;
+            box-shadow: 0 0 20px #000;
+            border-radius: 12px;
+            width: 480px;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fondo-juego {
+            width: 460px;
+            height: 300px;
+            background: #181818;
+            border-radius: 8px;
+            position: relative;
+        }
+        /* Paleta */
+        .paleta {
+            position: absolute;
+            left: 192px;
+            top: 270px;
+            width: 75px;
+            height: 10px;
+            background: #3498db;
+            border-radius: 5px;
+        }
+        /* Pelota */
+        .pelota {
+            position: absolute;
+            left: 230px;
+            top: 250px;
+            width: 16px;
+            height: 16px;
+            background: #f39c12;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #f39c12aa;
+        }
+        /* Ladrillos */
+        .bloque {
+            position: absolute;
+            width: 55px;
+            height: 20px;
+            background: #e74c3c;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px #0003;
+        }
+        /* Fila de ladrillos */
+        .bloque.r1 { top: 30px; }
+        .bloque.r2 { top: 58px; }
+        .bloque.r3 { top: 86px; }
+        .bloque.r4 { top: 114px; }
+        .bloque.r5 { top: 142px; }
+        .bloque.c1 { left: 20px; }
+        .bloque.c2 { left: 83px; }
+        .bloque.c3 { left: 146px; }
+        .bloque.c4 { left: 209px; }
+        .bloque.c5 { left: 272px; }
+        .bloque.c6 { left: 335px; }
+        .bloque.c7 { left: 398px; }
+
+        /* UI superior */
+        .ui-top {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .ui-top span {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+            padding: 2px 18px;
+        }
+
+        .letrero-espacio {
+            position: absolute;
+            top: 88px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #3498db;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 1.1rem;
+            padding: 10px 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0004;
+            z-index: 30;
+            display: none;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+        .btn-play {
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -50%);
+            font-size: 22px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 32px;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 2px 8px #0004;
+        }
+        .pantalla-fin {
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+        }
+        .mensaje-fin {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 18px;
+            font-family: Arial, sans-serif;
+        }
+        .btn-reiniciar {
+            font-size: 18px;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 28px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #0004;
+        }
