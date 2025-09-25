@@ -10,7 +10,6 @@ const btnPlay = document.querySelector('.btn-play');
 const pantallaFin = document.querySelector('.pantalla-fin');
 const btnReiniciar = document.querySelector('.btn-reiniciar');
 const mensajeFin = document.querySelector('.mensaje-fin');
-// Eliminado letreroEspacio
 const pantallaProx = document.querySelector('.pantalla-prox');
 
 // Botón siguiente nivel
@@ -52,7 +51,6 @@ function estadoInicial() {
     actualizarUI();
     dibujarPaleta();
     dibujarPelota();
-    // Eliminado letreroEspacio
 }
 
 function actualizarUI() {
@@ -98,7 +96,7 @@ function dibujarPelota() {
 
 // Movimiento de paleta con mouse
 fondo.addEventListener('mousemove', e => {
-    // Obtener posición relativa al fondo-juego
+    // Obtener posición relativa al fondo juego
     const rect = fondo.getBoundingClientRect();
     let mouseX = e.clientX - rect.left;
     paletaX = Math.max(0, Math.min(mouseX - paletaW/2, fondoW - paletaW));
@@ -109,13 +107,12 @@ fondo.addEventListener('mousemove', e => {
     dibujarPelota();
 });
 
-// Iniciar con click en cualquier parte del fondo-juego
+// Iniciar con click en cualquier parte del fondo juego
 fondo.addEventListener('click', () => {
-    // Solo permitir iniciar si ya se dio play
+    // Solo permitir iniciar si se dio play
     if (!started) return;
     if (!jugando) {
         jugando = true;
-    // Eliminado letreroEspacio
     }
 });
 
@@ -269,3 +266,4 @@ btnReiniciar.addEventListener('click', () => {
 btnPlay.style.display = 'block';
 pantallaFin.style.display = 'none';
 estadoInicial();
+
